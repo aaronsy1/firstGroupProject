@@ -1,7 +1,19 @@
-.total {
-    border-radius: 0px;
+body {
+    background-image: url(./images/paper_2.png)
 }
 
-#reset-button {
-    max-width: 500px;
+h1 {
+    font-family: 'Cinzel', serif !important;
+}
+
+#input-col {
+    max-width: 900px;
+}
+
+
+
+@media screen and (min-width: 450px) {
+    #reset-button {
+        max-width: 400px;
+    }
 }
