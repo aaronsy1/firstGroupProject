@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./spells/spells.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:700" rel="stylesheet">
 
     <title>Document</title>
 </head>
@@ -15,85 +17,87 @@
 <body>
     <div class="container">
         <div class="row">
-            <h1 class="col p-3 text-center">Spell Tool</h1>
+            <h1 class="col px-3 pb-3 pt-4 text-center">Spell Tool</h1>
         </div>
-        <div class="row">
-            <div class="col-auto pr-0">
+        <div class="row pb-1 justify-content-center">
+            <div class="col-auto pl-3 pr-0">
                 <button type="button" class="btn btn-primary" id="spell-search">Search</button>
             </div>
-            <div class="col pl-3 pb-3">
-                <input class="form-control" type="text" placeholder="" id="spell-input">
+            <div class="col pl-3 pr-3" id="input-col">
+                <input class="form-control" type="text" placeholder="" id="spell-input" onkeyup="myFunction()">
+            </div>
+        </div>
+        <div class="row px-2" id="spell-filter">
+        </div>
+        <div class="row">
+            <div class="col pb-2" id="spell-info-col">
             </div>
         </div>
         <div class="row">
-            <div class="col" id="spell-info-col">
-
+            <div class="col d-flex justify-content-center pb-2 pt-1">
+                <button class="btn btn-primary btn-block" id="reset-button">Reset Dice Totals</button>
             </div>
         </div>
         <div class="row">
-            <div class="col d-flex justify-content-center pb-2">
-                <button class="btn btn-primary btn-block" id="reset-button">Reset Totals</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col p-1">
+            <div class="col pr-1 pb-1 pl-3">
                 <div class="card mx-auto border-bottom-0">
+                    <div class="card-body p-1 text-center total-body">
+                        <span class="total">-</span>
+                    </div>
+                </div>
+                <button class="btn btn-secondary btn-block dice-button">4</button>
+            </div>
+            <div class="col px-1 pb-1">
+                <div class="card mx-auto border-bottom-0">
+                    <div class="card-body p-1 text-center total-body">
+                        <span class="total">-</span>
+                    </div>
+                </div>
+                <button class="btn btn-secondary btn-block dice-button">6</button>
+            </div>
+            <div class="col px-1 pb-1">
+                <div class="card mx-auto border-bottom-0">
+                    <div class="card-body p-1 text-center total-body">
+                        <span class="total">-</span>
+                    </div>
+                </div>
+                <button class="btn btn-secondary btn-block dice-button">8</button>
+            </div>
+            <div class="col px-1 pb-1">
+                <div class="card mx-auto border-bottom-0">
+                    <div class="card-body p-1 text-center total-body">
+                        <span class="total">-</span>
+                    </div>
+                </div>
+                <button class="btn btn-secondary btn-block dice-button">10</button>
+            </div>
+            <div class="col px-1 pb-1">
+                <div class="card mx-auto border-bottom-0">
+                    <div class="card-body p-1 text-center total-body">
+                        <span class="total">-</span>
+                    </div>
+                </div>
+                <button class="btn btn-secondary btn-block dice-button">12</button>
+            </div>
+            <div class="col px-1 pb-1">
+                <div class="card mx-auto border-bottom-0 total-body">
                     <div class="card-body p-1 text-center">
                         <span class="total">-</span>
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-block" id="dice4">4</button>
+                <button class="btn btn-secondary btn-block dice-button">20</button>
             </div>
-            <div class="col p-1">
-                <div class="card mx-auto border-bottom-0">
+            <div class="col pl-1 pb-1 pr-3">
+                <div class="card mx-auto border-bottom-0 total-body">
                     <div class="card-body p-1 text-center">
                         <span class="total">-</span>
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-block">6</button>
-            </div>
-            <div class="col p-1">
-                <div class="card mx-auto border-bottom-0">
-                    <div class="card-body p-1 text-center">
-                        <span class="total">-</span>
-                    </div>
-                </div>
-                <button class="btn btn-secondary btn-block">8</button>
-            </div>
-            <div class="col p-1">
-                <div class="card mx-auto border-bottom-0">
-                    <div class="card-body p-1 text-center">
-                        <span class="total">-</span>
-                    </div>
-                </div>
-                <button class="btn btn-secondary btn-block">10</button>
-            </div>
-            <div class="col p-1">
-                <div class="card mx-auto border-bottom-0">
-                    <div class="card-body p-1 text-center">
-                        <span class="total">-</span>
-                    </div>
-                </div>
-                <button class="btn btn-secondary btn-block">12</button>
-            </div>
-            <div class="col p-1">
-                <div class="card mx-auto border-bottom-0">
-                    <div class="card-body p-1 text-center">
-                        <span class="total">-</span>
-                    </div>
-                </div>
-                <button class="btn btn-secondary btn-block">20</button>
-            </div>
-            <div class="col p-1">
-                <div class="card mx-auto border-bottom-0">
-                    <div class="card-body p-1 text-center">
-                        <span class="total">-</span>
-                    </div>
-                </div>
-                <button class="btn btn-secondary btn-block">100</button>
+                <button class="btn btn-secondary btn-block dice-button">100</button>
             </div>
         </div>
     </div>
+    <footer class="p-5"></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
