@@ -1,0 +1,30 @@
+body {
+    background-image: url(./paper_2.png)
+}
+
+#main-container {
+    margin: 1%;
+}
+
+h1 {
+    color: black;
+    margin-left: 2%;
+}   
+
+h4 {
+    background-color: red;
+}
+
+.card {
+    background-color: white;
+}
+
+.click-me {
+    margin: 1%;
+    width: 50%;
+    height: 30%;
+}
+
+div {
+    margin: 1%;
+}
