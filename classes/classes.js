@@ -22,7 +22,7 @@ $(document).ready(function () {
 
                     var newBtn = $("<button>");
                     var newCard = $("<div>").addClass("card");
-                    var title = $("<h4>").addClass("card-header");
+                    var title = $("<h3>").addClass("card-header");
 
                     newCard.attr("id", className);
                     newBtn.attr("class-id", className);
@@ -72,7 +72,6 @@ $(document).ready(function () {
 
                     //holds the length of the active class data
                     prof1 = resp1[activeClass]["Class Features"]["Proficiencies"]["content"];
-                    console.log(prof1);
 
                     //Create a Div for extra information
                     classDiv = $("#" + activeClass);
@@ -99,23 +98,28 @@ $(document).ready(function () {
                     //var and loop for features. var for features length
                     features = featData[activeClass]["Class Features"]["The " + activeClass]["table"]["Features"];
                     featuresLength =  featData[activeClass]["Class Features"]["The " + activeClass]["table"]["Features"].length;
-
+                    
                     //get rid of "ability score improvements"
-                    delete features[11];
-
+                    features.splice(11, 1);
                     ftDiv = $("<div>");
+
+                    var queso = $("<h4>");
+                    queso.text("Features");
+                    $("<br>").appendTo(ftDiv);
+                    queso.appendTo(ftDiv);
 
                     // for loop for class features
                     for (var y = 0; y < featuresLength; y++) {
+
                         // var to hold the features names
                         classFeatures = features[y];
                         // we use previous variable to access our axios response
                         singleFeature = featData[activeClass]["Class Features"][classFeatures];
-
                         // we create and append div to display data
                         ftP = $("<h6>");
 
-                        ftP.text("** " + classFeatures + " : " +singleFeature);
+                        ftP.text("** " + classFeatures + ": " +singleFeature);
+
                         ftP.appendTo(ftDiv);
                         ftDiv.appendTo(profDiv);
                     }
