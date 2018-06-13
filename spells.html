@@ -20,11 +20,8 @@
             <h1 class="col px-3 pb-3 pt-4 text-center">Spell Tool</h1>
         </div>
         <div class="row pb-1 justify-content-center">
-            <div class="col-auto pl-3 pr-0">
-                <button type="button" class="btn btn-primary" id="spell-search">Search</button>
-            </div>
-            <div class="col pl-3 pr-3" id="input-col">
-                <input class="form-control" type="text" placeholder="" id="spell-input" onkeyup="myFunction()">
+            <div class="col px-3" id="input-col">
+                <input class="form-control" type="text" placeholder="Search..." id="spell-input" onkeyup="myFunction()">
             </div>
         </div>
         <div class="row px-2" id="spell-filter">
@@ -34,66 +31,80 @@
             </div>
         </div>
         <div class="row">
-            <div class="col d-flex justify-content-center pb-2 pt-1">
+            <div class="col d-flex justify-content-center px-3 pb-2 pt-1">
                 <button class="btn btn-primary btn-block" id="reset-button">Reset Dice Totals</button>
             </div>
         </div>
         <div class="row">
-            <div class="col pr-1 pb-1 pl-3">
+            <div class="col py-2 pl-1 pr-0 px-sm-1">
                 <div class="card mx-auto border-bottom-0">
                     <div class="card-body p-1 text-center total-body">
-                        <span class="total">-</span>
+                        <p class="dice-count m-0 text-primary">0</p>
+                        <hr class="m-0">
+                        <p class="total m-0 bg-light">-</p>
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-block dice-button">4</button>
+                <button class="btn btn-secondary btn-block dice-button" id="dice4">4</button>
             </div>
-            <div class="col px-1 pb-1">
+            <div class="col py-2 px-0 px-sm-1">
                 <div class="card mx-auto border-bottom-0">
                     <div class="card-body p-1 text-center total-body">
-                        <span class="total">-</span>
+                        <p class="dice-count m-0 text-primary">0</p>
+                        <hr class="m-0">
+                        <p class="total m-0 bg-light">-</p>
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-block dice-button">6</button>
+                <button class="btn btn-secondary btn-block dice-button" id="dice6">6</button>
             </div>
-            <div class="col px-1 pb-1">
+            <div class="col py-2 px-0 px-sm-1">
                 <div class="card mx-auto border-bottom-0">
                     <div class="card-body p-1 text-center total-body">
-                        <span class="total">-</span>
+                        <p class="dice-count m-0 text-primary">0</p>
+                        <hr class="m-0">
+                        <p class="total m-0 bg-light">-</p>
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-block dice-button">8</button>
+                <button class="btn btn-secondary btn-block dice-button" id="dice8">8</button>
             </div>
-            <div class="col px-1 pb-1">
+            <div class="col py-2 px-0 px-sm-1">
                 <div class="card mx-auto border-bottom-0">
                     <div class="card-body p-1 text-center total-body">
-                        <span class="total">-</span>
+                        <p class="dice-count m-0 text-primary">0</p>
+                        <hr class="m-0">
+                        <p class="total m-0 bg-light">-</p>
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-block dice-button">10</button>
+                <button class="btn btn-secondary btn-block dice-button" id="dice10">10</button>
             </div>
-            <div class="col px-1 pb-1">
+            <div class="col py-2 px-0 px-sm-1">
                 <div class="card mx-auto border-bottom-0">
                     <div class="card-body p-1 text-center total-body">
-                        <span class="total">-</span>
+                        <p class="dice-count m-0 text-primary">0</p>
+                        <hr class="m-0">
+                        <p class="total m-0 bg-light">-</p>
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-block dice-button">12</button>
+                <button class="btn btn-secondary btn-block dice-button" id="dice12">12</button>
             </div>
-            <div class="col px-1 pb-1">
+            <div class="col py-2 px-0 px-sm-1">
                 <div class="card mx-auto border-bottom-0 total-body">
                     <div class="card-body p-1 text-center">
-                        <span class="total">-</span>
+                        <p class="dice-count m-0 text-primary">0</p>
+                        <hr class="m-0">
+                        <p class="total m-0 bg-light">-</p>
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-block dice-button">20</button>
+                <button class="btn btn-secondary btn-block dice-button" id="dice20">20</button>
             </div>
-            <div class="col pl-1 pb-1 pr-3">
+            <div class="col py-2 pl-0 pr-1 px-sm-1">
                 <div class="card mx-auto border-bottom-0 total-body">
                     <div class="card-body p-1 text-center">
-                        <span class="total">-</span>
+                        <p class="dice-count m-0 text-primary">0</p>
+                        <hr class="m-0">
+                        <p class="total m-0 bg-light">-</p>
                     </div>
                 </div>
-                <button class="btn btn-secondary btn-block dice-button">100</button>
+                <button class="btn btn-secondary btn-block dice-button" id="dice100">100</button>
             </div>
         </div>
     </div>
