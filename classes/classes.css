@@ -1,0 +1,35 @@
+body {
+    background-image: url(./paper_2.png)
+}
+
+#main-container {
+    margin: 1%;
+}
+
+.jumbotron {
+    width: 95%;
+    background-color: slategrey;
+    background-image: url(./classes.jpg);
+    background-position: 100%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    margin-left: 5%;
+}   
+
+.card {
+    background-color: white;
+}
+
+.click-me {
+    margin: 1%;
+    width: 50%;
+    height: 30%;
+}
+
+div {
+    margin: 1%;
+}
