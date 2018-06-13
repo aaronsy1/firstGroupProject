@@ -6,11 +6,19 @@ h1 {
     font-family: 'Cinzel', serif !important;
 }
 
-#input-col {
-    max-width: 900px;
+.btn-secondary {
+    border-color: #999999 !important;
+    background-color: #6c757d !important;
+    box-shadow: none;
 }
 
+.btn-secondary:focus {
+    box-shadow: inset 0px 0px 1px white !important;
+}
 
+#input-col {
+    max-width: 400px;
+}
 
 @media screen and (min-width: 450px) {
     #reset-button {
