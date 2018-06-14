@@ -6,6 +6,8 @@
     projectId: "signinpractice-e608b",
     storageBucket: "",
     messagingSenderId: "719737663598"
+
+
   };
   firebase.initializeApp(config);
 
@@ -20,7 +22,7 @@ $('#sign-in').on('click',function(){
     localStorage.setItem('token',token);
     // The signed-in user info.
     var user = result.user;
-    console.log(user);
+    console.log("user sign in info" + user);
     // ...
   }).catch(function(error) {
       console.log(error);
@@ -36,7 +38,7 @@ $('#sign-in').on('click',function(){
 
 });
 
-$('#meetup').on('click',function(e){
+$('#meetup-button').on('click',function(e){
     e.preventDefault();
     console.log(localStorage.getItem('token'))
     if (!localStorage.getItem('token')){
@@ -62,3 +64,7 @@ firebase.auth().signOut().then(function() {
 
       
 })
+
+var db = firebase.database();
+
+  

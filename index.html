@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- saved from url=(0057)file:///Users/tedhuh/Desktop/firstGroupProject/index.html -->
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <!--css-->
-    <link type="text/css" src="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./home/home.css">
+
+
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <a href = "./signInPage.html"> <button >sign in page</button> </a>
-           <a href ='./meetup.html'> <button id = 'meetup'>meetup</button> </a>
-           <a href ='#'> <button id = 'sign-out'>sign out</button> </a>
+        <div class="container-fluid">
+            <div class="jumbotron card-panel jumbotron">
+                <h1 class="display-4 red-text" id = "appTitle">Dungeons and Dragons!</h1>
+                <hr class="my-4">
+                <p>Created only for the crazed obssesed D&amp;D masters!</p>
+            </div>
+
+
+            <div class="row">
+                <a class="btn input-block-level form-control btn-primary btn-lg button-index-link" id="spells-button" href="./spells.html">Spells!</a>
+                <a class="btn input-block-level form-control btn-primary btn-lg button-index-link" id="classes-button" href="./classes.html">Classes!</a>
+                <a class="btn input-block-level form-control btn-primary btn-lg button-index-link" id="meetup-button" href="./meetup.html">Meetups!</a>
+                <a class="btn input-block-level form-control btn-primary btn-lg button-index-link" id="sign-out" href="#">Sign Out</a>
+            </div>
+
         </div>
-    </div>
+
+
+
+
+
+
+
+
 
 </body>
 <!--firebase-->

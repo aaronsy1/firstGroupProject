@@ -10,14 +10,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
         crossorigin="anonymous">
     <!--css-->
-    <link type="text/css" src="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./home/home.css">
 </head>
 
 <body>
     <div class="container">
+
         <div class="row">
-            <button id = "sign-in" >sign in</button>
-            <a href ='./meetup.html'> <button id = 'meetup'>meetup</button> </a>
+
+                <div class="card" id="hostOrSearch" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Sign in</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Please sign in to continue to meetups</h6>
+                            <button id = "sign-in"class="btn btn-primary mb-1">sign in using Google</button>
+                            <a href ='./meetup.html'> <button id = 'meetup-button' class="btn btn-primary">Continue to meetups</button> </a>
+                        </div>
+                    </div>
+            
            
         </div>
     </div>
