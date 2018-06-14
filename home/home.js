@@ -1,4 +1,4 @@
-git   // Initialize Firebase
+// Initialize Firebase
   var config = {
     apiKey: "AIzaSyCc7qSKbxaCF4_mHI5NwtBtBoXSa_gJiF4",
     authDomain: "signinpractice-e608b.firebaseapp.com",
