@@ -47,7 +47,7 @@ $('#meetup-button').on('click',function(e){
     }
     else {
         console.log('signed in!')
-        window.location.assign("/meetup.html");
+        window.location.assign("./meetup.html");
     }
 })
 
