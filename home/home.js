@@ -43,7 +43,7 @@ $('#meetup-button').on('click',function(e){
     console.log(localStorage.getItem('token'))
     if (!localStorage.getItem('token')){
         console.log('not signed in redirecting to sign in page')
-        window.location.assign("/signInPage.html");
+        window.location.assign("./signinpage.html");
     }
     else {
         console.log('signed in!')
